@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen';
+}
+
+.flexfooter{
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+min-height: 100vh;
+}
+
+.logo{
+    font-size: 2vw;
+    display: flex;
+    justify-items: center;
+    align-items: center ;
+}
+
+.nav-links{
+    list-style: none;
+    gap: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-size: 2vw;
+    
+}
+
+.bienvenida{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.iframevid{
+    width: 25vw;
+    height: 15vw;
+    border: 1px solid black;
+    animation-duration: 4s;
+    animation-name: scale-in-center;
+}
+
+body{
+    background-color: #afebfa;
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    overflow: scroll;
+}
+
+
+header{
+    background-color:cadetblue;
+    color: rgb(255, 255, 255);
+    top: 0;
+    position: sticky;
+    z-index: 10000;
+    ;
+}
+
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 3px;
+}
+
+
+a{color: white;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: black;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 3vw;
+    justify-items: center;
+    align-items: center;
+    font-size: 2vw;
+    
+}
+
+h3{animation-duration: 2s;
+    animation-name: scale-in-center;
+}
+
+#explicaciones{animation-duration: 4s;
+    animation-name: scale-in-center;
+}
+
+
+@keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+        100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+ 
+
+
+footer{
+    color: white;
+    background-color:cadetblue;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+i{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
