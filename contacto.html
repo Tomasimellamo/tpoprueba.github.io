@@ -8,44 +8,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="./CSS/home.css">
     <link rel="shortcut icon" href="img/meteor-regular-24.png" type="image/x-icon">
         <title>A&M News - Contacto</title>
 </head>
 <body class="flexfooter">
     <header>
-        <nav>
+        <nav class="navegacion">
             <div class="logo">
-                <a href="TPO.html">
+                <a href="index.html">
                   <i class="fa-solid fa-a"></i>
                   <i class="fa-solid fa-m"></i>
                   <span class="logoam">Anime & Manga</span>
                 </a>
             </div>
             <ul class="nav-links">
-                <li> <a href="Anime.html">Anime</a> </li>
-                <li> <a href="Manga.html">Manga</a> </li>
-                <li> <a href="Contacto.html">Contacto</a> </li>
+                <li> <a href="anime.html">Anime</a> </li>
+                <li> <a href="manga.html">Manga</a> </li>
+                <li> <a href="contacto.html">Contacto</a> </li>
             </ul>           
         </nav>        
     </header>
-    <section class="bienvenida">
+    <section class="titulo">
         <h1>Anime & Manga News</h1>
+        <h3>¿Te gustaria formar parte de nuestro staff?</h3>
     </section>
-    
+    <section class="contactocontainer">
+        <div class="contactocontainer1" id="formtext">
+            <form id="contactoborder" action method ="get" enctype name="formcontact">
+                <label id="formtext" for="nombre">Nombre/s:</label>
+                <br>
+                <input class="contactotext" type="text" name="nombre" id="nombre" placeholder="Ej. Tomas" minlength="3" required>
+                <br> 
+                <label id="formtext" for="apellido">Apellido/s:</label>
+                <br>
+                <input class="contactotext" type="text" name="apellido" id="apellido" placeholder="Ej. Chavez" minlength="3" required>
+                <br> 
+                <label id="formtext" for="email">Email:</label>
+                <br>
+                <input class="contactotext" type="text" name="email" id="email" placeholder="Ej. Tomaschavez@gmail.com" minlength="10" required>
+                <br> 
+                <label id="formtext" for="number">N° Telefono:</label>
+                <br>
+                <input class="contactotext" type="text" name="number" id="number" placeholder="Ej. 1553768947" minlength="8" required>
+                <br> 
+                <label id="formtext" for="mensaje">Cualidades:</label>
+                <br>
+                <textarea class="contactotext" name="mensaje" id="mensaje" cols="19" rows="8" placeholder="Escriba su mensaje." required></textarea>
+                <br>
+                <input onclick="validar()" class="enviarform" type="submit" value="Enviar">
+            </form> 
+        </div>
 
-    <footer>
+    </section>
+
+    <footer class="footer">
         <p> Derechos reservados</p>
         <a href="https://www.instagram.com" target="_blank">
-            <i class="fa-brands fa-instagram"></i> 
+            <i id="redessociales" class="fa-brands fa-instagram"></i> 
         </a>
         <a href="https://www.twitter.com" target="_blank">
-            <i class="fa-brands fa-twitter"></i> 
+            <i id="redessociales" class="fa-brands fa-twitter"></i> 
         </a>
         <a href="https://www.whatsapp.com" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i> 
+            <i id="redessociales" class="fa-brands fa-whatsapp"></i> 
         </a>
+        <p>Tomas Chavez ™</p>
     </footer>
-
+    
 </body>
 </html>

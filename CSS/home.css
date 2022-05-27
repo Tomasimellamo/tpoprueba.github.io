@@ -12,6 +12,13 @@ justify-content:space-between;
 min-height: 100vh;
 }
 
+.navegacion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .logo{
     font-size: 2vw;
     display: flex;
@@ -29,6 +36,15 @@ min-height: 100vh;
     font-size: 2vw;
     
 }
+.titulo{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.8vw;
+
+}
 
 .bienvenida{
     margin-top: 3vw;
@@ -36,7 +52,9 @@ min-height: 100vh;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 1.8vw;
+    animation-duration: 4s;
+    animation-name: scale-in-center;
 }
 
 .iframevid{
@@ -50,7 +68,7 @@ min-height: 100vh;
 body{
     background-color: #afebfa;
     background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
-    overflow: scroll;
+    
 }
 
 
@@ -92,14 +110,6 @@ section{
     
 }
 
-h3{animation-duration: 2s;
-    animation-name: scale-in-center;
-}
-
-#explicaciones{animation-duration: 4s;
-    animation-name: scale-in-center;
-}
-
 
 @keyframes scale-in-center {
     0% {
@@ -113,8 +123,90 @@ h3{animation-duration: 2s;
   }
  
 
+  i{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contenedor-imagenes-novedades{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    gap: 0.5vw;
+    margin-top: 1vw;
+    animation-duration: 4s;
+    animation-name: scale-in-center;
+}
+
+
+.imagen{
+    margin: 0.2vw;
+    padding: 0vw;
+    width: 12vw;
+    
+}
+
+.imagen1{
+    width: 12vw;
+    height: 18vw;
+    border: 1px solid black;
+}
+
+#animes-trending,#mangas-trending{
+    margin-top: 2%;
+}
+.imagen-grid{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    justify-content: center;
+    border-radius: 1vw;
+    border: 1px solid darkcyan;
+    background-color:rgb(237, 252, 255);
+    
+}
+.item-grid.g1{
+    padding: 0.5vw;
+    margin: 0.5vw;
+    justify-self: end;
+}
+.item-grid.g2{
+    margin: 1%;
+    padding: 1%;
+    width: 70vw;
+    height: 20vw;
+    font-size: 5%;
+    justify-self:start;
+}
+
+
+div h4{
+    margin-top: -1vw;
+    font-size: 1.5vw;
+}
+
+div h5{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.3vw;
+        font-style: italic;
+    }
+#crunchy{
+    font-size: 1.3vw;
+    color: black;
+}
+#crunchy:hover{
+    color: red;
+}
+
+div u{
+    margin-top: 2vw;
+    display: flex;
+    justify-content:center;
+}
+
 
 footer{
+    margin-top: 1%;
     color: white;
     background-color:cadetblue;
     display: flex;
@@ -125,6 +217,142 @@ footer{
     font-size: 1.5vw;
 }
 
-i{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.contactocontainer{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;    
+}
+
+#formtext, input, textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+}
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .navegacion{
+        flex-direction: column;}
+    .logo{font-size: 2em;}
+    li{font-size: 1.7em;}
+    .titulo {font-size: 1.5em;}
+    .bienvenida{
+        padding: 5%;
+        font-size: 1.5em;}
+    .footer{font-size: 1.2em;}
+    
+    div h4{
+        font-size: 1.4rem;
+    }
+    div h5{
+        font-size: 1.2rem;
+    }
+    #crunchy{
+        font-size: 1.2rem;
+    }
+    .item-grid.g2{
+        height: auto;
+    }
+    .contactocontainer{
+        font-size: 1em;
+
+    }
+    #formtext{
+        font-size: 1em;
+    }
+    input{
+        font-size: 1em;
+    }
+    textarea{
+        font-size: 1em;
+    }
+    
+    
+    }
+@media screen and (max-width:800px){
+    .navegacion{
+        flex-direction: column;}
+    .logo{font-size: 1.5em;}
+    li{font-size: 2em;}
+    .titulo {font-size: 1.2em;}
+    .bienvenida{
+        padding: 5%;
+        font-size: 1.2em;}
+    .footer{font-size: 1.2em;}
+    .contenedor-imagenes-novedades{
+        flex-direction: row;
+    }
+    div h4{
+        font-size: 1.3rem;
+    }
+    div h5{
+        font-size: 1.1rem;
+    }
+    #crunchy{
+        font-size: 1.1rem;
+    }
+    .item-grid.g2{
+        height: auto;
+    }
+    .contactocontainer{
+        font-size: 1em;
+
+    }
+    #formtext{
+        font-size: 1em;
+    }
+    input{
+        font-size: 1em;
+    }
+    textarea{
+        font-size: 1em;
+    }
+    
+
+}
+@media screen and (max-width:480px){
+    .navegacion{
+        flex-direction: column;}
+    .logo{font-size: 1em;}
+    li{font-size: 2em;}
+    .nav-links{flex-direction: column;}
+    .titulo {font-size: 1em;}
+    .bienvenida{
+        padding: 5%;
+        font-size: 1em;}
+    .footer{
+        font-size: 0.8em;}
+    .contenedor-imagenes-novedades{
+        flex-direction: row;
+    }
+    div h4{
+        font-size: 1rem;
+    }
+    div h5{
+        font-size: 0.9rem;
+    }
+    #crunchy{
+        font-size: 0.8rem;
+    }
+    .item-grid.g2{
+        height: auto;
+    }
+    .contactocontainer{
+        font-size: 1em;
+
+    }
+    #formtext{
+        font-size: 1em;
+    }
+    input{
+        font-size: 1em;
+    }
+    textarea{
+        font-size: 1em;
+    }
+    
 }
